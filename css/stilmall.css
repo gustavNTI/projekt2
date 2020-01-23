@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    color: rgb(9, 255, 0);
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 4em;
+}
