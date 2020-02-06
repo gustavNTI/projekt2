@@ -12,16 +12,16 @@ body {
     grid-template-columns: auto;
     grid-template-areas:
     'nv'
-    'mn'
+    'mn';
 }
 
-/*nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav {
+    grid-area: nv;
+    text-align: center;
     height: 10vh;
     background-color: black;
-} */
+    margin-top: 20px;
+}
 
 h1 {
     text-align: center;
@@ -42,31 +42,15 @@ h1 {
     cursor: pointer;
 }
 
-.links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    right: 40vw;
-    height: 40vh;
-    top: 0vh;
-    background-color: black;
-    align-items: center;
-    width: 100vw;
-    /*visibility: hidden;*/
-    grid-area: nv;
-    z-index: -2;
-}
-
 .links a {
     color: white;
     margin: 20px;
-    align-items: center;
     text-decoration: none;
 }
 
 .links li{
     list-style: none;
+    margin: 6px;
 }
 
 .alltMys {
@@ -88,4 +72,12 @@ h1 {
     position: absolute;
     right: 5%;
     top: 15vh;
+}
+
+.links {
+    cursor: pointer;
+}
+
+main {
+    grid-area: mn;
 }
