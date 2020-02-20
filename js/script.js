@@ -1,8 +1,8 @@
-const main=document.querySelector('.links');
+const nav=document.querySelector('nav');
 const menu=document.querySelector('.menu');
 
 function toggleMenu() {
-    main.classList.toggle('mainActive');
+    nav.classList.toggle('mainActive');
     menu.classList.toggle('toggle');
 }
 

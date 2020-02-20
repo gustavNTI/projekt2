@@ -1,83 +1,68 @@
 * {
-    margin: 0px;
+    margin: 20px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-    color: rgb(9, 255, 0);
     background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
     display: grid;
-    height: 100vh;
     grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas:
     'nv'
     'mn';
 }
 
 nav {
-    grid-area: nv;
-    text-align: center;
-    height: 10vh;
-    background-color: black;
-    margin-top: 20px;
+grid-area: nv;
+z-index: -1;
+display: none;
 }
 
-h1 {
+.navLinks a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+}
+
+.navLinks li {
+    list-style: none;
     text-align: center;
-    margin: 20px;
-    font-size: 4em;
+}
+
+.menu {
+    color: white;
+    cursor: pointer;
+    text-align: center;
 }
 
 #namn {
-    color: white;
     font-style: italic;
     text-align: center;
 }
 
-#menu {
-    color: white;
+h1 {
+    color: rgb(0, 255, 0);
     text-align: center;
-    margin: 20px;
-    cursor: pointer;
-}
-
-.links a {
-    color: white;
-    margin: 20px;
-    text-decoration: none;
-}
-
-.links li{
-    list-style: none;
-    margin: 6px;
-}
-
-.alltMys {
-    grid-area: mn;
-    top: 100vh;
-}
-
-.alltMys img {
-    display: block;
-    margin: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-    width: 345,6px;
-    height: 194,4px;
-}
-
-#fjaril {
-    position: absolute;
-    right: 5%;
-    top: 15vh;
-}
-
-.links {
-    cursor: pointer;
 }
 
 main {
     grid-area: mn;
+    z-index: 1;
+    top: 100vh;
+}
+.alltMys img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainActive {
+    display: block;
 }
