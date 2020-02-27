@@ -17,9 +17,66 @@ body {
 }
 
 nav {
+    grid-area: nv;
+    display: none;
+    text-align: left;
+    }
+    
+    .navLinks a{
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        text-align: left;
+    }
+    
+    .navLinks li {
+        list-style: none;
+        text-align: left;
+        cursor: pointer;
+    }
+    
+    .menu {
+        color: white;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .mainActive {
+        display: block;
+    }
+
+.alltMys img {
+    width: 100%;
+    height: 100%;
+}
+
+#namn {
+    font-style: italic;
+    text-align: left;
+}
+
+h1 {
+    color: rgb(0, 255, 0);
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'nv'
+    'mn';
+}
+
+nav {
 grid-area: nv;
-z-index: -1;
 display: none;
+text-align: center;
 }
 
 .navLinks a{
@@ -27,11 +84,13 @@ display: none;
     text-decoration: none;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .navLinks li {
     list-style: none;
     text-align: center;
+    cursor: pointer;
 }
 
 .menu {
@@ -55,14 +114,41 @@ main {
     z-index: 1;
     top: 100vh;
 }
+
 .alltMys img {
     display: block;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .mainActive {
     display: block;
+}
+
+#contacttext {
+    color: white;
+    text-align: center;
+}
+
+#contacttext2 {
+    color: white;
+    text-align: center;
+}
+
+#contacttext3 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+#info {
+    text-align: center;
+    color: white;
+}
 }
