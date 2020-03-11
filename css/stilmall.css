@@ -17,39 +17,51 @@ body {
     margin: 40px;
 }
 
+#info {
+    text-align: left;
+    margin: 20px;
+}
+
 nav {
     grid-area: nv;
-    display: none;
+    display: table;
     text-align: left;
-    }
-    
-    .navLinks a{
-        cursor: pointer;
-        text-decoration: none;
-        color: white;
-        text-align: left;
-    }
-    
-    .navLinks li {
-        list-style: none;
-        text-align: left;
-        cursor: pointer;
-        margin: 20px;
-    }
-    
-    .menu {
-        color: white;
-        cursor: pointer;
-        text-align: left;
-        margin: 20px;
-    }
+}
 
-    .mainActive {
-        display: block;
-    }
+.navLinks a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    
+}
+    
+.navLinks li {
+    list-style: none;
+    text-align: left;
+    cursor: pointer;
+    margin: 20px;
+    float: left;
+}
+
+.navLinks a:hover {
+    color: rgb(0, 255, 0);
+    transition: 400ms;
+}
+    
+.menu {
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    margin: 20px;
+    display: none;
+}
+
+.mainActive {
+    display: block;
+}
 
 .alltMys {
-text-align: center;
+text-align: left
 }
 
 .alltMys img {
@@ -64,11 +76,41 @@ text-align: center;
     margin: 20px;;
 }
 
-h1 {
+#pageNo {
+    text-align: left;
+}
+
+#portLink {
+    text-decoration: none;
+    color: white;
+}
+
+#internetCandy {
     color: rgb(0, 255, 0);
+    margin: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+#contacttext {
+    color: white;
     text-align: left;
     margin: 20px;
 }
+
+#contacttext2 {
+    color: white;
+    text-align: left;
+    margin: 20px;
+}
+
+#contacttext3 {
+    color: white;
+    text-align: left;
+    margin: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
     body {
@@ -81,6 +123,10 @@ h1 {
     grid-template-areas:
     'nv'
     'mn';
+}
+
+#info {
+    text-align: center;
 }
 
 nav {
@@ -101,12 +147,14 @@ text-align: center;
     list-style: none;
     text-align: center;
     cursor: pointer;
+    float: none;
 }
 
 .menu {
     color: white;
     cursor: pointer;
     text-align: center;
+    display: block;
 }
 
 #namn {
@@ -127,7 +175,6 @@ main {
 
 .alltMys {
     text-align: center;
-    margin: 20px;
 }
 
 .alltMys img {
@@ -136,6 +183,13 @@ main {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+#internetCandy {
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 28px;
 }
 
 .mainActive {
@@ -165,23 +219,13 @@ h2 {
     text-align: center;
 }
 
-#info {
+p {
     text-align: center;
     color: white;
-    margin: 20px;
-}
 }
 
 #pageNo {
     text-align: center;
 }
-
-#portLink {
-    text-decoration: none;
-    color: white;
 }
 
-#info {
-    text-align: left;
-    margin: 20px;
-}
