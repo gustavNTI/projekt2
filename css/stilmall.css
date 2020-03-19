@@ -46,6 +46,13 @@ nav {
 .navLinks a:hover {
     color: rgb(0, 255, 0);
     transition: 400ms;
+    text-shadow: 0px 0px 20px #00FF00;
+}
+
+#portLink:hover {
+    color: rgb(0, 255, 0);
+    transition: 400ms;
+    text-shadow: 0px 0px 20px #00FF00;
 }
     
 .menu {
@@ -113,57 +120,31 @@ text-align: left
 
 
 @media only screen and (max-width: 600px) {
-    body {
-    background-color: black;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    'nv'
-    'mn';
-}
 
 #info {
     text-align: center;
 }
 
 nav {
-grid-area: nv;
 display: none;
 text-align: center;
 }
 
-.navLinks a{
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    text-decoration: none;
+.navLinks a {
     text-align: center;
 }
 
 .navLinks li {
-    list-style: none;
     text-align: center;
-    cursor: pointer;
     float: none;
 }
 
 .menu {
-    color: white;
-    cursor: pointer;
     text-align: center;
     display: block;
 }
 
 #namn {
-    font-style: italic;
-    text-align: center;
-}
-
-h1 {
-    color: rgb(0, 255, 0);
     text-align: center;
 }
 
@@ -179,49 +160,24 @@ main {
 
 .alltMys img {
     display: block;
-    width: 100%;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 #internetCandy {
-    color: rgb(0, 255, 0);
-    font-weight: bold;
-    text-decoration: none;
     font-size: 28px;
 }
 
-.mainActive {
-    display: block;
-}
-
 #contacttext {
-    color: white;
     text-align: center;
-    margin: 20px;
 }
 
 #contacttext2 {
-    color: white;
     text-align: center;
-    margin: 20px;
 }
 
 #contacttext3 {
-    color: white;
     text-align: center;
-    margin: 20px;
-}
-
-h2 {
-    color: white;
-    text-align: center;
-}
-
-p {
-    text-align: center;
-    color: white;
 }
 
 #pageNo {
